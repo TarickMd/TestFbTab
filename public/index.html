@@ -6,7 +6,11 @@
 </head>
 <body ng-app="todoModule">
     <div class="container" ng-controller="homeController">
-        <p>hallo</p>
+        <form class="subscribeForm" ng-submit="subscribe()">
+            <label for="subscribe">SubscribeMe</label>
+            <input ng-required="true" type="text" id="subscribe" ng-model="email.subscribeMe"/>
+            <input type='submit' value="Subscribe!!"/>
+        </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
     <script src="app.js"></script>

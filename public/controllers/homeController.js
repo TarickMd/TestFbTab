@@ -1,4 +1,10 @@
-app.controller("homeController", ["$scope", function($scope){
-       $scope.tarick = 'hi';
-       console.log($scope.tarick);
-   }]);
+app.controller('homeController', ['$scope', '$http', function($scope, $http){
+    $scope.email = {};
+    $scope.subscribe = function() {
+        $http.post('/subscribe', $scope.email).success(function(res){
+            console.log(res);
+        }).error(function(err){
+            console.log(err);
+        });
+    };
+}]);
