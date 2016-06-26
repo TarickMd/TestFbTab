@@ -12,12 +12,17 @@
             <a href="/"><img src="img/logo.png" alt="logo" class="logo"></a>
             <h1>Audi A4 History</h1>
         </div>
+
         <ui-view></ui-view>
-        <form class="subscribeForm" ng-submit="subscribe()">
-            <label for="subscribe">SubscribeMe</label>
-            <input ng-required="true" type="text" id="subscribe" ng-model="email.subscribeMe"/>
-            <input type='submit' value="Subscribe!!"/>
-        </form>
+
+        <div class="footer">
+            <form class="subscribeForm" ng-submit="subscribe()">
+                <label for="subscribe"></label>
+                <input ng-required="true" placeholder="Enter your email..." type="email" id="subscribe" ng-model="email.subscribeMe"/>
+                <input type='submit' value="Subscribe!!"/>
+                <span class="copy">&copy; Taras Dzhulay 2016</span>
+            </form>
+        </div>
     </div>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>

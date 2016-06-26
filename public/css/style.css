@@ -7,8 +7,12 @@ body {
     background: linear-gradient(to left, #283048 , #859398);
     color: #fff;
     min-height: 100%;
+    padding: 25px;
 }
-
+.container .main,
+.container .details{
+    margin-bottom: 20px;
+}
 .container .main .a4b5 img {
     margin: 0 auto;
     width: 700px;
@@ -18,23 +22,20 @@ body {
 .container .main .a4b6 img {
     float: left;
     width: 300px;
-    padding: 15px;
+    padding: 4px 14px 23px 0px;
     height: 200px;
 }
 
 .container .main .a4b7 img {
     float: right;
     width: 300px;
-    padding: 15px;
+    padding: 4px 14px 19px 15px;
     height: 200px;
 }
 
 
 .container .main .info a {
     font-weight: 700;
-}
-.container p, .container h3 {
-    padding: 10px;
 }
 .container h3 {
     text-align: center;
@@ -57,19 +58,39 @@ body {
     color: #fff;
     margin: 0;
     margin-left: 130px;
+    margin-top: 6px;
 }
 .container .header {
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
 }
 .container .header .logo {
     float: left;
     width: 114px;
 }
 
-.subscribeForm {
-    text-align: center;
+.subscribeForm #subscribe {
+    width: 200px;
+    background-color: #F1F1F1;
+    border: none;
+    padding: 4px;
 }
 .subscribeForm input {
     color: #000;
     padding: 3px;
+}
+
+.container .a4b5_details p,
+.container .a4b6_details p,
+.container .a4by_details p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.footer {
+   margin-left: 25px;
+}
+div.footer .copy {
+    float: right;
+    padding-right: 50px;
+    font-style: italic;
 }
