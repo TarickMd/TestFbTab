@@ -35,7 +35,8 @@ body {
 
 
 .container .main .info a {
-    font-weight: 700;
+    font-weight: 900;
+    font-style: italic;
 }
 .container h3 {
     text-align: center;
