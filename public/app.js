@@ -1,1 +1,1 @@
-var app = angular.module('todoModule',[]);
+var app = angular.module('todoModule',['ui.router']);

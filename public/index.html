@@ -2,18 +2,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Audi a4 app</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="todoModule">
     <div class="container" ng-controller="homeController">
+        <div class="header col-sm-12">
+            <a href="/"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <h1>Audi A4 History</h1>
+        </div>
+        <ui-view></ui-view>
         <form class="subscribeForm" ng-submit="subscribe()">
             <label for="subscribe">SubscribeMe</label>
             <input ng-required="true" type="text" id="subscribe" ng-model="email.subscribeMe"/>
             <input type='submit' value="Subscribe!!"/>
         </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
+    <script src="config/route.js"></script>
     <script src="controllers/homeController.js"></script>
 </body>
 </html>

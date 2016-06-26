@@ -1,0 +1,75 @@
+body {
+    background-color: #000;
+}
+.container {
+    background: #283048;
+    background: -webkit-linear-gradient(to left, #283048 , #859398);
+    background: linear-gradient(to left, #283048 , #859398);
+    color: #fff;
+    min-height: 100%;
+}
+
+.container .main .a4b5 img {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    padding: 15px;
+}
+.container .main .a4b6 img {
+    float: left;
+    width: 300px;
+    padding: 15px;
+    height: 200px;
+}
+
+.container .main .a4b7 img {
+    float: right;
+    width: 300px;
+    padding: 15px;
+    height: 200px;
+}
+
+
+.container .main .info a {
+    font-weight: 700;
+}
+.container p, .container h3 {
+    padding: 10px;
+}
+.container h3 {
+    text-align: center;
+}
+.container .a4b5_details .imgWrap {
+    width: 100%;
+}
+.container .imgWrap img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.container h2 {
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+.container h1 {
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    margin-left: 130px;
+}
+.container .header {
+    padding: 30px;
+}
+.container .header .logo {
+    float: left;
+    width: 114px;
+}
+
+.subscribeForm {
+    text-align: center;
+}
+.subscribeForm input {
+    color: #000;
+    padding: 3px;
+}
