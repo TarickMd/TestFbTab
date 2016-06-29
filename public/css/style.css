@@ -95,3 +95,37 @@ div.footer .copy {
     padding-right: 50px;
     font-style: italic;
 }
+
+div.footer .subscribeForm {
+    margin-bottom: 5px;
+}
+div.success {
+    font-weight: 700;
+    width: 26%;
+    font-style: italic;
+    display: inline-block;
+    text-align: center;
+    color: #3CD12C;
+}
+div.error {
+    font-weight: 700;
+    width: 26%;
+    font-style: italic;
+    display: inline-block;
+    text-align: center;
+    color: #C91616;
+}
+
+.preloader-wrap {
+    position: relative;
+    width: 200px;
+}
+
+.preloader {
+    position: absolute;
+    display: inline-block;
+    padding: 15px;
+    bottom: 5px;
+    left: 170px;
+    background: url('../img/preloader-ajax.gif') no-repeat 50% 50% transparent;
+}

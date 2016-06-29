@@ -19,7 +19,7 @@ app.post('/subscribe', jsonParser, function (req, res) {
         if (err) {
             res.send({success: false, message: err});
         } else {
-            res.send({success: true, message:"Data saved successfully"})
+            res.send({success: true, message:"Your mail address has been saved!"});
         }
     });
 });

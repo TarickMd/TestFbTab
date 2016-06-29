@@ -22,6 +22,15 @@
                 <input type='submit' value="Subscribe!!"/>
                 <span class="copy">&copy; Taras Dzhulay 2016</span>
             </form>
+            <div class="preloader-wrap">
+                <span class="preloader" ng-show="preloader"></span>
+            </div>
+            <div class="success" ng-show="success">
+                <span class="success">{{successMessage}}</span>
+            </div>
+            <div class="error" ng-show="!success">
+                <span class="error">{{errorMessage}}</span>
+            </div>
         </div>
     </div>
     <script src="lib/jquery.min.js"></script>
