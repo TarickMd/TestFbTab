@@ -101,7 +101,8 @@ div.footer .subscribeForm {
 }
 div.success {
     font-weight: 700;
-    width: 26%;
+    width: 41%;
+    font-size: 13px;
     font-style: italic;
     display: inline-block;
     text-align: center;
