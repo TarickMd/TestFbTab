@@ -1,44 +1,45 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Audi a4 app</title>
-    <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body ng-app="testTab">
-    <div class="container" ng-controller="subscribeController as subscribe">
-        <div class="header col-sm-12">
-            <a href="/"><img src="img/logo.png" alt="logo" class="logo"></a>
-            <h1>Audi A4 History</h1>
-        </div>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Audi a4 app</title>
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body ng-app="testTab">
+        <div class="container" ng-controller="subscribeController as subscribe">
+            <div class="header col-sm-12">
+                <a href="/"><img src="img/logo.png" alt="logo" class="logo"></a>
+                <h1>Audi A4 History</h1>
+            </div>
 
-        <ui-view></ui-view>
+            <ui-view></ui-view>
 
-        <div class="footer">
-            <form class="subscribeForm" ng-submit="subscribe.sendMail()">
-                <label for="subscribe"></label>
-                <input ng-required="true" placeholder="Enter your email..." type="email" id="subscribe" ng-model="subscribe.email.subscribeMe"/>
-                <input type='submit' value="Subscribe!!"/>
-                <span class="copy">&copy; Taras Dzhulay 2016</span>
-            </form>
-            <div class="preloader-wrap">
-                <span class="preloader" ng-show="subscribe.preloader"></span>
-            </div>
-            <div class="success" ng-show="subscribe.success">
-                <span class="success">{{subscribe.successMessage}}</span>
-            </div>
-            <div class="error" ng-show="!subscribe.success">
-                <span class="error">{{subscribe.errorMessage}}</span>
+            <div class="footer">
+                <form class="subscribeForm" ng-submit="subscribe.sendMail()">
+                    <label for="subscribe"></label>
+                    <input ng-required="true" placeholder="Enter your email..." type="email" id="subscribe" ng-model="subscribe.email.subscribeMe"/>
+                    <input type='submit' value="Subscribe!!"/>
+                    <span class="copy">&copy; Taras Dzhulay 2016</span>
+                </form>
+                <div class="preloader-wrap">
+                    <span class="preloader" ng-show="subscribe.preloader"></span>
+                </div>
+                <div class="success" ng-show="subscribe.success">
+                    <span class="success">{{subscribe.successMessage}}</span>
+                </div>
+                <div class="error" ng-show="!subscribe.success">
+                    <span class="error">{{subscribe.errorMessage}}</span>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="lib/jquery.min.js"></script>
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
-    <script src="app.module.js"></script>
-    <script src="config/app.route.js"></script>
-    <script src="controllers/subscribe.controller.js"></script>
-</body>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
+        <script src="app.module.js"></script>
+        <script src="config/app.route.js"></script>
+        <script src="controllers/subscribe.controller.js"></script>
+    </body>
 </html>
