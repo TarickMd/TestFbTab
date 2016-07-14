@@ -1,5 +1,9 @@
-'use strict';
-    app.config(function ($stateProvider, $urlRouterProvider) {
+(function(){
+    'use strict';
+
+    angular.module('testTab').config(configFunc);
+
+    function configFunc($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('home', {
                 url: "/",
@@ -18,4 +22,5 @@
                 templateUrl: "views/audi-a4-b7.client.view.html"
             });
         $urlRouterProvider.otherwise('/');
-    });
+    }
+})();
